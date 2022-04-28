@@ -1,13 +1,13 @@
 #!/bin/sh
-mkdir Notes
-mkdir Tools
-mkdir Visuals
-Syuu -y
-pacman -Syuu -y Discord neofetch steam bashtop 
-pacman -Syuu -y asciiquarium
+#!/bin/bash
 
 cd
-mkdir Tools
+mkdir Notes Tools Visuals
+
+pacman -Syuu -y
+pacman -Syuu -y discord neofetch steam bashtop 
+pacman -Syuu -y asciiquarium
+
 cd Tools
 git clone https://gitlab.com/jallbrit/cbonsai
 cd cbonsai
