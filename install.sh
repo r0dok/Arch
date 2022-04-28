@@ -14,7 +14,7 @@ mpv "${AUDIO_DST}"
 
 # Regular tools:
 yes | pacman -Syyu
-yes | pacman -S --needed discord neofetch steam bashtop asciiquarium
+yes | pacman -S --needed discord neofetch bashtop asciiquarium
 
 # bonsai:
 mkdir ${HOMEDIR}/{Notes,Tools,Visuals}
