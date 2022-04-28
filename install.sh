@@ -6,6 +6,8 @@ HOMEDIR="/home/${USER}"
 AUDIO_SRC='https://www.youtube.com/watch?v=5Z5qYOuc1dE'
 AUDIO_DST="${HOMEDIR}/Music/ara_ara.mp3"
 
+yes | pacman -Syyu
+
 # Ara_ara.mp3:
 yes | pacman -S --needed ffmpeg youtube-dl mpv
 youtube-dl --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --output
@@ -13,7 +15,6 @@ youtube-dl --ignore-errors --format bestaudio --extract-audio --audio-format mp3
 mpv "${AUDIO_DST}"
 
 # Regular tools:
-yes | pacman -Syyu
 yes | pacman -S --needed discord neofetch bashtop asciiquarium
 
 # bonsai:
