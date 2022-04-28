@@ -8,14 +8,14 @@ AUDIO_SRC='https://www.youtube.com/watch?v=5Z5qYOuc1dE'
 AUDIO_DST="${HOMEDIR}/Music/ara_ara.mp3"
 
 # Ara_ara.mp3:
-yes | pacman -S youtube-dl mpv
+yes | pacman -S --needed youtube-dl mpv
 youtube-dl --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --output
 "${AUDIO_DST}" --no-playlist "${AUDIO_SRC}"
 mpv "${AUDIO_DST}"
 
 # Regular tools:
 yes | pacman -Syyu
-yes | pacman -S discord neofetch steam bashtop asciiquarium
+yes | pacman -S --needed discord neofetch steam bashtop asciiquarium
 
 # bonsai:
 mkdir ${HOMEDIR}/{Notes,Tools,Visuals}
@@ -31,7 +31,7 @@ git clone https://github.com/addy-dclxvi/openbox-theme-collections ${HOMEDIR}/.t
 cd ${HOMEDIR}/Tools/
 curl -O https://blackarch.org/strap.sh
 chmod +x strap.sh
-yes | pacman -S catphish email2phonenumber holehe seeker simpleemailspoofer buster whatsmyname whatbreach twint
+yes | pacman -S --needed catphish email2phonenumber holehe seeker simpleemailspoofer buster whatsmyname whatbreach twint
 trape social-vuln-scanner
 
 # Setting up audio:
