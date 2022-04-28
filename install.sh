@@ -7,7 +7,7 @@ AUDIO_SRC='https://www.youtube.com/watch?v=5Z5qYOuc1dE'
 AUDIO_DST="${HOMEDIR}/Music/ara_ara.mp3"
 
 # Ara_ara.mp3:
-yes | pacman -S --needed youtube-dl mpv
+yes | pacman -S --needed ffmpeg youtube-dl mpv
 youtube-dl --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --output
 "${AUDIO_DST}" --no-playlist "${AUDIO_SRC}"
 mpv "${AUDIO_DST}"
