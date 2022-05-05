@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USER="$(readlink -f $(echo $0) | cut -d '/' -f 3)"
+USER="$(readlink -f $(whoami) | cut -d '/' -f 3)"
 HOMEDIR="/home/${USER}"
 
 AUDIO_SRC='https://www.youtube.com/watch?v=5Z5qYOuc1dE'
