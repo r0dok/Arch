@@ -6,7 +6,7 @@ HOMEDIR="/home/${USER}"
 AUDIO_SRC='https://www.youtube.com/watch?v=5Z5qYOuc1dE'
 AUDIO_DST="${HOMEDIR}/Music/ara_ara.mp3"
 
-yes | pacman -Syyu
+yes | pacman -Syu
 
 # Ara_ara.mp3:
 yes | pacman -S --needed ffmpeg youtube-dl mpv
