@@ -6,15 +6,10 @@ HOMEDIR="/home/${USER}"
 AUDIO_SRC='https://www.youtube.com/watch?v=5Z5qYOuc1dE'
 AUDIO_DST="${HOMEDIR}/Music/ara_ara.mp3"
 
-yes | pacman -Syu
 
 # Ara_ara.mp3:
-yes | pacman -S --needed ffmpeg youtube-dl mpv
 youtube-dl --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --output "${AUDIO_DST}" --no-playlist "${AUDIO_SRC}"
 mpv "${AUDIO_DST}"
-
-# Regular tools:
-yes | pacman -S --needed discord neofetch bashtop asciiquarium
 
 # bonsai:
 mkdir ${HOMEDIR}/{Notes,Tools,Visuals}
@@ -25,13 +20,6 @@ make install
 
 # GUI themes:
 git clone https://github.com/addy-dclxvi/openbox-theme-collections ${HOMEDIR}/.themes
-
-# Blackarch:
-cd ${HOMEDIR}/Tools/
-curl -O https://blackarch.org/strap.sh
-chmod +x strap.sh
-yes | pacman -S --needed catphish email2phonenumber holehe seeker simpleemailspoofer buster whatsmyname whatbreach twint
-trape social-vuln-scanner
 
 # Setting up audio:
 amixer set Master on
