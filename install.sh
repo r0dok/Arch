@@ -3,6 +3,9 @@
 USER=$(whoami)
 HOMEDIR="/home/${USER}"
 
+# Create directories
+mkdir -p ${HOMEDIR}/{Notes,Tools,Visuals,Music}
+
 # Update system and install required packages
 sudo pacman -Syu --noconfirm
 sudo pacman -S --needed --noconfirm ffmpeg youtube-dl mpv discord neofetch steam bashtop asciiquarium git curl
@@ -34,9 +37,6 @@ git clone https://gitlab.com/jallbrit/cbonsai ${HOMEDIR}/Tools/cbonsai
 cd ${HOMEDIR}/Tools/cbonsai
 make install PREFIX=${HOMEDIR}/.local
 make install
-
-# Clone GUI themes
-git clone https://github.com/addy-dclxvi/openbox-theme-collections ${HOMEDIR}/.themes
 
 # Setup audio levels
 amixer set Master on
