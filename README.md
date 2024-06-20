@@ -26,7 +26,7 @@ This script automates the installation of essential software and configurations 
 - Configures audio settings.
 - Installs various OSINT tools from BlackArch.
 
-)
+
 
 ## Included Tools
 
