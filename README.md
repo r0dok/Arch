@@ -6,11 +6,10 @@ A comprehensive script to set up Arch Linux with essential tools, audio settings
 
 1. [Overview](#overview)
 2. [Features](#features)
-3. [Usage](#usage)
-4. [Included Tools](#included-tools)
-5. [Additional Resources](#additional-resources)
-6. [Contributing](#contributing)
-7. [License](#license)
+3. [Included Tools](#included-tools)
+4. [Additional Resources](#additional-resources)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 ## Overview
 
@@ -27,23 +26,7 @@ This script automates the installation of essential software and configurations 
 - Configures audio settings.
 - Installs various OSINT tools from BlackArch.
 
-## Usage
-
-1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/yourusername/arch-linux-setup.git
-    cd arch-linux-setup
-    ```
-
-2. **Make the script executable**:
-    ```sh
-    chmod +x setup.sh
-    ```
-
-3. **Run the script**:
-    ```sh
-    ./setup.sh
-    ```
+)
 
 ## Included Tools
 
