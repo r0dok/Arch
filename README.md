@@ -14,6 +14,7 @@ A comprehensive script to set up Arch Linux with essential tools, audio settings
 
 ## Overview
 
+It also calls you a master, if all is working right
 This script automates the installation of essential software and configurations for a new Arch Linux setup. It includes tools for productivity, entertainment, and system optimization, making the setup process quick and easy.
 
 ## Features
